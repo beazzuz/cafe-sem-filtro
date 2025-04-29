@@ -51,7 +51,6 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             alt="Fundo Sobre"
             className={styles.headerBackground}
             quality={50}
-            placeholder="dominantColor"
             layout="fullWidth"
             formats={["avif", "webp", "auto"]}
           />
@@ -61,7 +60,6 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             alt="Fundo Café"
             className={styles.headerBackground}
             quality={50}
-            placeholder="dominantColor"
             layout="fullWidth"
             formats={["avif", "webp", "auto"]}
           />
@@ -73,7 +71,6 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               src="../images/logo.png"
               alt="Café Sem Filtro"
               className={styles.logo}
-              placeholder="tracedSVG"
               layout="fixed"
               formats={["auto", "webp", "avif"]}
               width={160}
@@ -170,8 +167,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
                   src="../images/wpp_icon.png"
                   alt="WhatsApp"
                   className={styles.icon}
-                  placeholder="tracedSVG"
-                  layout="fixed"
+                      layout="fixed"
                   formats={["auto", "webp", "avif"]}
                   width={20}   
                   height={20}  
@@ -192,8 +188,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               <StaticImage
                 src="../images/facebook-icon.png"
                 alt="Facebook"
-                placeholder="tracedSVG"
-                layout="fixed"
+                  layout="fixed"
                 formats={["auto", "webp", "avif"]}
                 width={24}   
                 height={24}  
@@ -207,8 +202,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               <StaticImage
                 src="../images/youtube-icon.png"
                 alt="YouTube"
-                placeholder="tracedSVG"
-                layout="fixed"
+                  layout="fixed"
                 formats={["auto", "webp", "avif"]}
                 width={24}   
                 height={24}  
@@ -222,8 +216,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               <StaticImage
                 src="../images/instagram-icon.png"
                 alt="Instagram"
-                placeholder="tracedSVG"
-                layout="fixed"
+                  layout="fixed"
                 formats={["auto", "webp", "avif"]}
                 width={24}   
                 height={24}  

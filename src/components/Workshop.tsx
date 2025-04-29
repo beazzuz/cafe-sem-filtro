@@ -44,7 +44,6 @@ const Workshop: React.FC = () => {
           src="../images/workshop_pg12.jpg"
           alt="Workshop - imagem principal"
           className={styles.imageLarge}
-          placeholder="blurred"
           layout="constrained"
           formats={["auto", "webp", "avif"]}
           
@@ -56,8 +55,7 @@ const Workshop: React.FC = () => {
           <StaticImage
             src="../images/workshop_pg11.jpg"
             alt="Workshop - imagem adicional 1"
-            placeholder="blurred"
-            layout="constrained"
+              layout="constrained"
             formats={["auto", "webp", "avif"]}
             width={350}   
             height={350}  
@@ -65,8 +63,7 @@ const Workshop: React.FC = () => {
           <StaticImage
             src="../images/workshop_11.png"
             alt="Workshop - imagem adicional 2"
-            placeholder="blurred"
-            layout="constrained"
+              layout="constrained"
             formats={["auto", "webp", "avif"]}
             width={300}   
             height={350}  

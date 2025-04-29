@@ -51,7 +51,6 @@ const Sobre: React.FC = () => {
             src="../images/preparo_sobre.png"
             alt="Preparo"
             className={styles.image}
-            placeholder="blurred"
             layout="constrained"
             formats={["auto", "webp", "avif"]}
             width={400}  
@@ -89,7 +88,6 @@ const Sobre: React.FC = () => {
             src="../images/graos_sobre.png"
             alt="Grãos"
             className={styles.image}
-            placeholder="blurred"
             layout="constrained"
             width={400}  
             height={500} 
@@ -132,8 +130,7 @@ const Sobre: React.FC = () => {
             <StaticImage
               src="../images/galeria1.jpg"
               alt="Ambiente do café"
-              placeholder="blurred"
-              layout="constrained"
+                layout="constrained"
               formats={["auto", "webp", "avif"]}              
               width={250}  
               height={170} 
@@ -141,40 +138,35 @@ const Sobre: React.FC = () => {
             <StaticImage
               src="../images/galeria2.jpg"
               alt="Barista preparando café"
-              placeholder="blurred"
-              layout="constrained"
+                layout="constrained"
               formats={["auto", "webp", "avif"]}              width={250}  
               height={170} 
             />
             <StaticImage
               src="../images/galeria3.jpg"
               alt="Clientes felizes"
-              placeholder="blurred"
-              layout="constrained"
+                layout="constrained"
               formats={["auto", "webp", "avif"]}              width={250}  
               height={170} 
               />
             <StaticImage
               src="../images/galeria4.jpeg"
               alt="Café latte e bolo"
-              placeholder="blurred"
-              layout="constrained"
+                layout="constrained"
               formats={["auto", "webp", "avif"]}              width={250}  
               height={170} 
             />
             <StaticImage
               src="../images/galeria5.jpg"
               alt="Croissant de chocolate"
-              placeholder="blurred"
-              layout="constrained"
+                layout="constrained"
               formats={["auto", "webp", "avif"]}              width={250}  
               height={170} 
             />
             <StaticImage
               src="../images/galeria6.jpg"
               alt="Clientes felizes"
-              placeholder="blurred"
-              layout="constrained"
+                layout="constrained"
               formats={["auto", "webp", "avif"]}              width={250}  
               height={170} 
             />

@@ -11,7 +11,6 @@ const Valores: React.FC = () => {
         <StaticImage
           src="../images/preparo.png"
           alt="Preparo Artesanal"
-          placeholder="tracedSVG"
           formats={["auto", "webp", "avif"]}
           width={100}  
           height={100} 
@@ -27,7 +26,6 @@ const Valores: React.FC = () => {
         <StaticImage
           src="../images/graos.png"
           alt="Grãos Sustentáveis"
-          placeholder="tracedSVG"
           formats={["auto", "webp", "avif"]}
           width={100}   
           height={100}  
@@ -43,7 +41,6 @@ const Valores: React.FC = () => {
         <StaticImage
           src="../images/vivencia.png"
           alt="Vivência com o Café"
-          placeholder="tracedSVG"
           formats={["auto", "webp", "avif"]}
           width={100}   
           height={100}  

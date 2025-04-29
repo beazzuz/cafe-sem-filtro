@@ -94,7 +94,6 @@ const Menu: React.FC = () => {
         src="../images/splash.png"
         alt="café e grão caindo"
         className={styles.decorativeImage}
-        placeholder="blurred"
         layout="constrained"
         formats={["auto", "webp", "avif"]}
         width={600}
@@ -104,7 +103,6 @@ const Menu: React.FC = () => {
         src="../images/splash2.png"
         alt="café espirrando"
         className={styles.decorativeImage2}
-        placeholder="none"
         layout="constrained"
         formats={["auto", "webp", "avif"]}
         width={500}
