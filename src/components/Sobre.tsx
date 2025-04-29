@@ -1,5 +1,3 @@
-// src/components/Sobre.tsx
-
 import * as React from "react"
 import * as styles from "./Sobre.module.css"
 import { StaticImage } from "gatsby-plugin-image"
@@ -139,35 +137,40 @@ const Sobre: React.FC = () => {
               src="../images/galeria2.jpg"
               alt="Barista preparando café"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              width={250}  
+              formats={["auto", "webp", "avif"]}              
+              width={250}  
               height={170} 
             />
             <StaticImage
               src="../images/galeria3.jpg"
               alt="Clientes felizes"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              width={250}  
+              formats={["auto", "webp", "avif"]}              
+              width={250}  
               height={170} 
               />
             <StaticImage
               src="../images/galeria4.jpeg"
               alt="Café latte e bolo"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              width={250}  
+              formats={["auto", "webp", "avif"]}             
+               width={250}  
               height={170} 
             />
             <StaticImage
               src="../images/galeria5.jpg"
               alt="Croissant de chocolate"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              width={250}  
+              formats={["auto", "webp", "avif"]}              
+              width={250}  
               height={170} 
             />
             <StaticImage
               src="../images/galeria6.jpg"
               alt="Clientes felizes"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              width={250}  
+              formats={["auto", "webp", "avif"]}              
+              width={250}  
               height={170} 
             />
           </div>

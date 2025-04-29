@@ -6,8 +6,7 @@
   background-color: #fdf6ec;
   position: relative;
   overflow: hidden;
-  flex-wrap: wrap; 
-  
+  flex-wrap: wrap;
 }
 
 .imageGrid {
@@ -27,7 +26,6 @@
 
 .smallImages {
   display: flex;
-  
   justify-content: center;
   gap: 1rem;
 }
@@ -63,7 +61,6 @@
   line-height: 1.6;
   margin-bottom: 1.5rem;
   text-align: justify;
-
 }
 
 .content button {
@@ -92,33 +89,28 @@ button:hover {
   height: auto;
   pointer-events: none;
 }
-@media (max-width:1600px) {
-    .decorativeBeans{
-      left: -33%;
-    }
-  
+
+@media (max-width: 1600px) {
+  .decorativeBeans {
+    left: -33%;
+  }
 }
 
 @media (max-width: 1400px) {
-  
+  .content h2 {
+    position: relative;
+    max-width: 80%;
+  }
 
- .content h2{
-  position: relative;
-  max-width: 80%;
- }
- .content p{
- 
-  position: relative;
+  .content p {
+    position: relative;
+  }
 
- }
-.decorativeBeans{
- left: -37%;
-}
-  
-  
+  .decorativeBeans {
+    left: -37%;
+  }
 }
 
-/* TABLET */
 @media (max-width: 1250px) {
   .section {
     flex-direction: row;
@@ -127,15 +119,15 @@ button:hover {
   }
 
   .content {
-    margin-bottom:10px;
+    margin-bottom: 10px;
     max-width: 500px;
     text-align: center;
-    align-items: center ;
+    align-items: center;
   }
 
   .content h2 {
     font-size: 3rem;
-   max-width: 100%;
+    max-width: 100%;
     margin-bottom: 1rem;
   }
 
@@ -147,25 +139,24 @@ button:hover {
   .decorativeBeans {
     display: none;
   }
-  .imageGrid{
+
+  .imageGrid {
     flex-direction: column;
     align-items: center;
   }
- 
 }
 
-/* MOBILE */
 @media (max-width: 600px) {
   .section {
     flex-direction: row;
     padding: 1rem;
   }
- 
-  .imageLarge{
+
+  .imageLarge {
     width: 70%;
     height: auto;
   }
-  
+
   .smallImages {
     width: 70%;
     height: auto;

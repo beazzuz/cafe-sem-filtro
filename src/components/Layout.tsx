@@ -10,16 +10,12 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
   const [menuOpen, setMenuOpen] = React.useState(false)
- 
-  
-  
-
-  // Garante que o menu inicie fechado
+  const closeMenu = () => setMenuOpen(false)
   React.useEffect(() => {
     setMenuOpen(false)
   }, [])
   
-  // Controla o scroll do body quando o menu abre
+ 
   React.useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto"
     return () => {
@@ -27,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
     }
   }, [menuOpen])
   
-  // Fecha o menu automaticamente se a tela for redimensionada para desktop
+ 
   React.useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -88,18 +84,18 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             <span />
           </button>
 
-          {/* SOMENTE renderiza o menu após o componente montar */}
           
-            <nav className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
+          
+            <nav className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>{/* SOMENTE renderiza o menu após o componente montar */}
               <ul>
-                <li><a href="/#menu" className={styles.navLink}>Menu</a></li>
+                <li><a href="/#menu" className={styles.navLink} onClick={closeMenu}>Menu</a></li>
                 <li><a href="/#workshop" className={styles.navLink}>Workshop</a></li>
                 {variant === "sobre" ? (
-                  <li><a href="/sobre/#contato" className={styles.navLink}>Contato</a></li>
+                  <li><a href="/sobre/#contato" className={styles.navLink} onClick={closeMenu}>Contato</a></li>
                 ) : (
                   <>
-                    <li><a href="#contato" className={styles.navLink}>Contato</a></li>
-                    <li><Link to="/sobre" className={styles.navLink}>Sobre</Link></li>
+                    <li><a href="#contato" className={styles.navLink} onClick={closeMenu}>Contato</a></li>
+                    <li><Link to="/sobre" className={styles.navLink} onClick={closeMenu}>Sobre</Link></li>
                   </>
                 )}
                 <li id={styles.wpp}>
@@ -137,9 +133,14 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             )}
           </div>
         </div>
+       
       </header>
 
-      <main>{children}</main>
+      <main>{children}
+
+
+      </main>
+      
       <footer id="contato" className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>

@@ -85,7 +85,6 @@
 
 .ctaButton {
   background-color: #3c1c0d;
-
   color: #FFF7E7;
   padding: 0.8rem 2rem;
   border: none;
@@ -125,7 +124,6 @@
   height: auto;
 }
 
-/* Responsivo */
 @media (max-width: 1024px) {
   .title {
     font-size: 2.7rem;

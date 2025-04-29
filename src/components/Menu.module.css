@@ -1,4 +1,3 @@
-
 .menuSection {
   padding: 4rem 2rem;
   position: relative;
@@ -115,10 +114,9 @@
   opacity: 0.8;
 }
 
-/* Tablets e menores */
 @media (max-width: 1330px) {
   .grid {
-    justify-content: flex-start; 
+    justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -133,12 +131,12 @@
     min-width: 50vw;
   }
   .grid {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-  
+
   .grid::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
   }
 
   .decorativeImage,
