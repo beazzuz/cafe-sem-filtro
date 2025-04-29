@@ -1,0 +1,83 @@
+.valores {
+  background-color: #f8f0e3;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  margin: 0;
+ 
+}
+
+.item {
+  max-width: 300px;
+}
+
+.item img {
+  margin-bottom: 1rem;
+  width: auto;       /* ou 100% se quiser responsivo */
+  height: auto;
+  max-width: 100%;   /* impede de estourar o container */
+  object-fit: contain;
+}
+
+.item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2D1405;
+  font-family: 'fraunces', serif;
+  font-weight: 700;
+}
+
+.item p {
+  font-size: 1.1rem;
+  color: #2C1506;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: all 0.3s ease; /* ← Transição suave para qualquer mudança */
+}
+
+.item img {
+  margin-bottom: 1rem;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* ← Específico para animação de escala, se quiser */
+}
+
+.item h2, .item p {
+  transition: color 0.3s ease, font-size 0.3s ease; /* ← Suavizar alterações de cor e tamanho */
+}
+@media (max-width: 780px) {
+  .valores {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    
+  }
+
+  .item {
+    max-width: 50%;
+    padding: 10px;
+  }
+
+  .item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .item h2 {
+    font-size: 1.3rem;
+  }
+
+  .item p {
+    font-size: 1rem;
+    
+  }
+}
