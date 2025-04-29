@@ -22,7 +22,7 @@ A proposta é um site para uma cafeteria fictícia, com foco em experiência art
 
 Protótipo disponível no Figma:
 
-👉 [Link para o Figma]((https://www.figma.com/design/lWhHKbKKV1Yk1cv9jEhXkF/Untitled?node-id=0-1&t=acA0sfzR6dbSMEZ3-1))  
+👉 [Link para o Figma][https://www.figma.com/design/lWhHKbKKV1Yk1cv9jEhXkF/Untitled?node-id=0-1&t=acA0sfzR6dbSMEZ3-1]  
 
 
 ---
@@ -70,8 +70,7 @@ npm install gh-pages
 /src
   ├── components/    → Componentes reutilizáveis
   ├── images/        → Imagens otimizadas com StaticImage
-  ├── pages/         → Páginas do Gatsby (home, sobre etc.)
-  ├── styles/        → CSS Modules
+  ├── pages/         → Páginas do Gatsby 
 gatsby-config.js     → Configurações dos plugins
 ```
 
