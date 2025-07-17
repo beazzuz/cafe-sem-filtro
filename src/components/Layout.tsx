@@ -169,7 +169,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
                   alt="WhatsApp"
                   className={styles.icon}
                       layout="fixed"
-                  formats={["auto", "webp", "avif"]}
+                  formats={["auto", "webp"]}
                   width={20}   
                   height={20}  
                 />
@@ -190,7 +190,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
                 src="../images/facebook-icon.png"
                 alt="Facebook"
                   layout="fixed"
-                formats={["auto", "webp", "avif"]}
+                formats={["auto", "webp"]}
                 width={24}   
                 height={24}  
               />
@@ -204,7 +204,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
                 src="../images/youtube-icon.png"
                 alt="YouTube"
                   layout="fixed"
-                formats={["auto", "webp", "avif"]}
+                formats={["auto", "webp"]}
                 width={24}   
                 height={24}  
               />
@@ -218,7 +218,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
                 src="../images/instagram-icon.png"
                 alt="Instagram"
                   layout="fixed"
-                formats={["auto", "webp", "avif"]}
+                formats={["auto", "webp"]}
                 width={24}   
                 height={24}  
               />
