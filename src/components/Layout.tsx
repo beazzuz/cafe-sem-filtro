@@ -14,32 +14,31 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
   React.useEffect(() => {
     setMenuOpen(false)
   }, [])
-  
- 
+
   React.useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto"
     return () => {
       document.body.style.overflow = "auto"
     }
   }, [menuOpen])
-  
- 
+
   React.useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
         setMenuOpen(false)
       }
     }
-  
+
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [])
-  
 
   return (
     <div className={styles.body}>
       <header
-        className={`${styles.header} ${variant === "sobre" ? styles.sobreHeader : ""}`}
+        className={`${styles.header} ${
+          variant === "sobre" ? styles.sobreHeader : ""
+        }`}
       >
         {variant === "sobre" ? (
           <StaticImage
@@ -84,31 +83,65 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             <span />
           </button>
 
-          
-          
-            <nav className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>{/* SOMENTE renderiza o menu após o componente montar */}
-              <ul>
-                <li><a href="/#menu" className={styles.navLink} onClick={closeMenu}>Menu</a></li>
-                <li><a href="/#workshop" className={styles.navLink}>Workshop</a></li>
-                {variant === "sobre" ? (
-                  <li><a href="/sobre/#contato" className={styles.navLink} onClick={closeMenu}>Contato</a></li>
-                ) : (
-                  <>
-                    <li><a href="#contato" className={styles.navLink} onClick={closeMenu}>Contato</a></li>
-                    <li><Link to="/sobre" className={styles.navLink} onClick={closeMenu}>Sobre</Link></li>
-                  </>
-                )}
-                <li id={styles.wpp}>
-                  <a href="https://wa.me/5511991407988" target="_blank" rel="noopener noreferrer">
-                    WhatsApp
+          <nav className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
+            {/* SOMENTE renderiza o menu após o componente montar */}
+            <ul>
+              <li>
+                <a href="/#menu" className={styles.navLink} onClick={closeMenu}>
+                  Menu
+                </a>
+              </li>
+              <li>
+                <a href="/#workshop" className={styles.navLink}>
+                  Workshop
+                </a>
+              </li>
+              {variant === "sobre" ? (
+                <li>
+                  <a
+                    href="/sobre/#contato"
+                    className={styles.navLink}
+                    onClick={closeMenu}
+                  >
+                    Contato
                   </a>
                 </li>
-              </ul>
-            </nav>
-          
+              ) : (
+                <>
+                  <li>
+                    <a
+                      href="#contato"
+                      className={styles.navLink}
+                      onClick={closeMenu}
+                    >
+                      Contato
+                    </a>
+                  </li>
+                  <li>
+                    <Link
+                      to="/sobre"
+                      className={styles.navLink}
+                      onClick={closeMenu}
+                    >
+                      Sobre
+                    </Link>
+                  </li>
+                </>
+              )}
+              <li id={styles.wpp}>
+                <a
+                  href="https://wa.me/5511991407988"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <div className={styles.herowrap}>
+        <div className={styles.heroWrapper}>
           <div className={styles.heroContent}>
             {variant === "sobre" ? (
               <h1>Sobre Nós</h1>
@@ -122,7 +155,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
                 <button
                   type="button"
                   className={styles.ctaButton}
-                  onClick={(e) => {
+                  onClick={e => {
                     e.preventDefault()
                     scrollToId("menu")
                   }}
@@ -133,22 +166,15 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             )}
           </div>
         </div>
-       
       </header>
 
-      <main>{children}
+      <main>{children}</main>
 
-
-      </main>
-      
       <footer id="contato" className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
             <h2>Café Sem Filtro</h2>
-            <a
-              href="https://maps.google.com/"
-              className={styles.addressLink}
-            >
+            <a href="https://maps.google.com/" className={styles.addressLink}>
               <p>Rua dos Grãos de Café - CEP 12345-678</p>
             </a>
             <p>Seg a Sáb | 06:00 – 19:00</p>
@@ -168,10 +194,10 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
                   src="../images/wpp_icon.png"
                   alt="WhatsApp"
                   className={styles.icon}
-                      layout="fixed"
+                  layout="fixed"
                   formats={["auto", "webp"]}
-                  width={20}   
-                  height={20}  
+                  width={20}
+                  height={20}
                 />
                 <span>WhatsApp</span>
               </a>
@@ -189,10 +215,10 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               <StaticImage
                 src="../images/facebook-icon.png"
                 alt="Facebook"
-                  layout="fixed"
+                layout="fixed"
                 formats={["auto", "webp"]}
-                width={24}   
-                height={24}  
+                width={24}
+                height={24}
               />
             </a>
             <a
@@ -203,10 +229,10 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               <StaticImage
                 src="../images/youtube-icon.png"
                 alt="YouTube"
-                  layout="fixed"
+                layout="fixed"
                 formats={["auto", "webp"]}
-                width={24}   
-                height={24}  
+                width={24}
+                height={24}
               />
             </a>
             <a
@@ -217,10 +243,10 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               <StaticImage
                 src="../images/instagram-icon.png"
                 alt="Instagram"
-                  layout="fixed"
+                layout="fixed"
                 formats={["auto", "webp"]}
-                width={24}   
-                height={24}  
+                width={24}
+                height={24}
               />
             </a>
           </div>
