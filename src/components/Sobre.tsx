@@ -50,7 +50,7 @@ const Sobre: React.FC = () => {
             alt="Preparo"
             className={styles.image}
             layout="constrained"
-            formats={["auto", "webp", "avif"]}
+            formats={["auto", "webp"]}
             width={400}  
             height={500} 
           />
@@ -129,7 +129,7 @@ const Sobre: React.FC = () => {
               src="../images/galeria1.jpg"
               alt="Ambiente do café"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              
+              formats={["auto", "webp"]}              
               width={250}  
               height={170} 
             />
@@ -137,7 +137,7 @@ const Sobre: React.FC = () => {
               src="../images/galeria2.jpg"
               alt="Barista preparando café"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              
+              formats={["auto", "webp"]}              
               width={250}  
               height={170} 
             />
@@ -145,7 +145,7 @@ const Sobre: React.FC = () => {
               src="../images/galeria3.jpg"
               alt="Clientes felizes"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              
+              formats={["auto", "webp"]}              
               width={250}  
               height={170} 
               />
@@ -153,7 +153,7 @@ const Sobre: React.FC = () => {
               src="../images/galeria4.jpeg"
               alt="Café latte e bolo"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}             
+              formats={["auto", "webp"]}             
                width={250}  
               height={170} 
             />
@@ -161,7 +161,7 @@ const Sobre: React.FC = () => {
               src="../images/galeria5.jpg"
               alt="Croissant de chocolate"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              
+              formats={["auto", "webp"]}              
               width={250}  
               height={170} 
             />
@@ -169,7 +169,7 @@ const Sobre: React.FC = () => {
               src="../images/galeria6.jpg"
               alt="Clientes felizes"
                 layout="constrained"
-              formats={["auto", "webp", "avif"]}              
+              formats={["auto", "webp"]}              
               width={250}  
               height={170} 
             />

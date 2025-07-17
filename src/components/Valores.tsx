@@ -11,7 +11,7 @@ const Valores: React.FC = () => {
         <StaticImage
           src="../images/preparo.png"
           alt="Preparo Artesanal"
-          formats={["auto", "webp", "avif"]}
+          formats={["auto", "webp"]}
           width={100}  
           height={100} 
         />
@@ -26,7 +26,7 @@ const Valores: React.FC = () => {
         <StaticImage
           src="../images/graos.png"
           alt="Grãos Sustentáveis"
-          formats={["auto", "webp", "avif"]}
+          formats={["auto", "webp"]}
           width={100}   
           height={100}  
         />
@@ -41,7 +41,7 @@ const Valores: React.FC = () => {
         <StaticImage
           src="../images/vivencia.png"
           alt="Vivência com o Café"
-          formats={["auto", "webp", "avif"]}
+          formats={["auto", "webp"]}
           width={100}   
           height={100}  
         />

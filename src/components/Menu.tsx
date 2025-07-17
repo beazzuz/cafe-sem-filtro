@@ -95,7 +95,7 @@ const Menu: React.FC = () => {
         alt="café e grão caindo"
         className={styles.decorativeImage}
         layout="constrained"
-        formats={["auto", "webp", "avif"]}
+        formats={["auto", "webp"]}
         width={600}
         height={400}
       />
@@ -104,7 +104,7 @@ const Menu: React.FC = () => {
         alt="café espirrando"
         className={styles.decorativeImage2}
         layout="constrained"
-        formats={["auto", "webp", "avif"]}
+        formats={["auto", "webp"]}
         width={500}
       />
     </section>

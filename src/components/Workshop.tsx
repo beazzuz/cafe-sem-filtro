@@ -12,7 +12,7 @@ const Workshop: React.FC = () => {
   alt="Grãos decorativos"
   className={styles.decorativeBeans}
   placeholder="tracedSVG"
-  formats={["auto", "webp", "avif"]}
+  formats={["auto", "webp"]}
   layout="fixed"
   width={605}
   height={775}
@@ -45,7 +45,7 @@ const Workshop: React.FC = () => {
           alt="Workshop - imagem principal"
           className={styles.imageLarge}
           layout="constrained"
-          formats={["auto", "webp", "avif"]}
+          formats={["auto", "webp"]}
           
           width={725}   
           height={300}  
@@ -56,7 +56,7 @@ const Workshop: React.FC = () => {
             src="../images/workshop_pg11.jpg"
             alt="Workshop - imagem adicional 1"
               layout="constrained"
-            formats={["auto", "webp", "avif"]}
+            formats={["auto", "webp"]}
             width={350}   
             height={350}  
           />
@@ -64,7 +64,7 @@ const Workshop: React.FC = () => {
             src="../images/workshop_11.png"
             alt="Workshop - imagem adicional 2"
               layout="constrained"
-            formats={["auto", "webp", "avif"]}
+            formats={["auto", "webp"]}
             width={300}   
             height={350}  
           />
