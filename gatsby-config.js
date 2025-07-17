@@ -13,6 +13,7 @@ module.exports = {
       title: "Café Sem Filtro", 
       description: "Uma experiência artesanal com café.",
       author: "@beazzuz",
+      siteUrl: "https://cafe-sem-filtro.onrender.com",
     
   },
   plugins: [
