@@ -48,7 +48,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             className={styles.headerBackground}
             quality={50}
             layout="fullWidth"
-            formats={["avif", "webp", "auto"]}
+            formats={["webp", "auto"]}
           />
         ) : (
           <StaticImage
@@ -57,7 +57,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
             className={styles.headerBackground}
             quality={50}
             layout="fullWidth"
-            formats={["avif", "webp", "auto"]}
+            formats={["webp", "auto"]}
           />
         )}
 
@@ -68,7 +68,7 @@ const Layout: React.FC<LayoutProps> = ({ children, variant = "default" }) => {
               alt="Café Sem Filtro"
               className={styles.logo}
               layout="fixed"
-              formats={["auto", "webp", "avif"]}
+              formats={["auto", "webp"]}
               width={160}
               height={91}
             />
